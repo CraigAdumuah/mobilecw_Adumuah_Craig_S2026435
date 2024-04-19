@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mobile CW Adumuah_Craig_S2026435</string>
+
+        <string-array name="cities_array">
+            <item>Glasgow</item>
+            <item>London</item>
+            <item>New York</item>
+            <item>Bangladesh</item>
+            <item>Mauritius</item>
+            <item>Oman</item>
+        </string-array>
+
+
+</resources>

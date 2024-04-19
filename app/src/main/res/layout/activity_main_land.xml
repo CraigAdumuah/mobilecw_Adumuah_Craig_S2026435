@@ -1,0 +1,42 @@
+<!-- res/layout-land/activity_main.xml -->
+<!-- Craig Adumuah S2026435  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<Spinner
+    android:id="@+id/locationSpinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" />
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_below="@id/locationSpinner"
+    android:layout_marginTop="16dp" />
+
+<TextView
+    android:id="@+id/rawDataDisplay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/map"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:text="Raw Weather Data"
+    android:textSize="18sp" />
+
+<Button
+    android:id="@+id/showWeatherButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/rawDataDisplay"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:text="Show Weather" />
+
+</RelativeLayout>

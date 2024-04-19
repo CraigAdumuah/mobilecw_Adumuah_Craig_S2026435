@@ -1,0 +1,54 @@
+<!--  MPD XML Starter code - main diet 2023-2024  -->
+<!-- Craig Adumuah S2026435  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="16dp">
+
+    <TextView android:id="@+id/salutation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Welcome to Mobile Platform Development"/>
+
+    <Spinner
+        android:id="@+id/locationSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/cities_array"
+        android:layout_marginTop="18dp"
+        android:padding="14dp"/>
+
+    <Button android:id="@+id/startButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Press to get data"/>
+
+    <Button android:id="@+id/showWeatherButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Weather Data"/>
+
+    <TextView android:id="@+id/acknowledgement"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Contains BBC weather data from public RSS"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView android:id="@+id/rawDataDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Raw Data is Displayed here"/>
+
+</LinearLayout>
+</ScrollView>
